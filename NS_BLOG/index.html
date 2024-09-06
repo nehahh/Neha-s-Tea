@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neha's Tea</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('back.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        .header {
+            padding: 50px;
+            background-color: #e8c872;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            color: #006064;
+            font-family: 'Playfair Display SC', serif;
+            font-size: 3em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .image {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .image img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #006064;
+        }
+
+        .navbar {
+            margin-top: 20px;
+        }
+
+        .navbar button {
+            margin: 10px;
+            padding: 12px 25px;
+            background-color: #006064;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar button:hover {
+            background-color: #004d40;
+        }
+
+        .sections {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 50px 0;
+        }
+
+        .section-btn {
+            width: 300px;
+            padding: 20px;
+            margin: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            border: 1px solid #e0e0e0;
+            text-align: left;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section-btn:hover {
+            background-color: #f0e6cb;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .qna {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .qna h3 {
+            margin-bottom: 20px;
+            color: #006064;
+        }
+
+        .qna textarea {
+            width: 80%;
+            height: 120px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .qna input[type="submit"] {
+            padding: 12px 25px;
+            background-color: #006064;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .qna input[type="submit"]:hover {
+            background-color: #004d40;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-container"></div>
+    <div class="header">
+        <h1>Neha's Notebook</h1>
+    </div>
+
+    <div class="image">
+        <img src="h.jpg" alt="Neha's Image">
+    </div>
+
+    <div class="navbar">
+        <button onclick="location.href='about.html'">About Me</button>
+        <button onclick="location.href='projects.html'">Projects</button>
+    </div>
+
+    <div class="sections">
+        <button class="section-btn" onclick="location.href='pg.html'">
+            <h2>Personal Growth</h2>
+            <p>How I Dealt with Adversities and Grew Stronger.</p>
+        </button>
+
+        <button class="section-btn" onclick="location.href='paws_portraits.html'">
+            <h2>Paws & Portraits</h2>
+            <p>Meet My Gully Dogs: A Portrait of My Furry Friends.</p>
+        </button>
+
+        <button class="section-btn" onclick="location.href='anime_hobbies.html'">
+            <h2>Anime & Hobbies</h2>
+            <p>My Top 5 Anime Series of All Time: A Must-Watch List.</p>
+        </button>
+    </div>
+
+    <div class="qna">
+        <h3>Q&A Section</h3>
+        <form action="">
+            <textarea name="question" placeholder="Ask your question here..."></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

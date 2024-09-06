@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dive into Anime</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-image: url('header-image.jpg'); /* Replace with your header image */
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      border-bottom: 5px solid #007bff;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      margin: 0;
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .header p {
+      font-size: 1.25rem;
+      font-weight: 300;
+      color: #007bff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .anime-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .anime-item {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .anime-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .anime-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .anime-item h2 {
+      font-size: 1.6rem;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .anime-item p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    .anime-item a {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .anime-item a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      border-top: 5px solid #007bff;
+    }
+
+    .footer p {
+      margin: 10px 0;
+    }
+
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Dive into Anime</h1>
+    <p>Explore a world of thrilling stories, captivating characters, and stunning visuals.</p>
+  </header>
+
+  <div class="container">
+    <div class="anime-container">
+      <div class="anime-item">
+        <img src="an2.jpg" alt="Jujutsu Kaisen">
+        <h2>Jujutsu Kaisen</h2>
+        <p>A high school student with extraordinary powers joins forces with Jujutsu sorcerers to combat deadly Curses.</p>
+        <a href="https://en.wikipedia.org/wiki/Jujutsu_Kaisen" target="_blank">Read More</a>
+      </div>
+      <div class="anime-item">
+        <img src="an1.jpg" alt="One Piece">
+        <h2>One Piece</h2>
+        <p>Join Monkey D. Luffy and the Straw Hat Pirates on a grand adventure in search of the legendary One Piece!</p>
+        <a href="https://en.wikipedia.org/wiki/One_Piece" target="_blank">Read More</a>
+      </div>
+      <div class="anime-item">
+        <img src="an5.jpg" alt="Spy x Family">
+        <h2>Spy x Family</h2>
+        <p>A spy must build a fake family to complete his mission, but his new "wife" and "daughter" have their own secrets.</p>
+        <a href="https://en.wikipedia.org/wiki/Spy_X_Family" target="_blank">Read More</a>
+      </div>
+      <div class="anime-item">
+        <img src="an4.jpg" alt="Demon Slayer">
+        <h2>Demon Slayer</h2>
+        <p>A young swordsman embarks on a quest to avenge his family and save his sister from becoming a demon.</p>
+        <a href="https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba" target="_blank">Read More</a>
+      </div>
+      <div class="anime-item">
+        <img src="an3.jpg" alt="Vinland Saga">
+        <h2>Vinland Saga</h2>
+        <p>Set in the Viking Age, this epic tale follows a young warrior seeking revenge and adventure.</p>
+        <a href="https://en.wikipedia.org/wiki/Vinland_Saga_(manga)" target="_blank">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 Dive into Anime. All rights reserved.</p>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">Contact</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

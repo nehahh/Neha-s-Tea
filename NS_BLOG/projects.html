@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f4f8;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .project-overview {
+      display: flex;
+      overflow-x: auto;
+      padding: 10px;
+      gap: 20px;
+    }
+
+    .project {
+      min-width: 300px;
+      max-width: 350px;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease-in-out;
+      border: 1px solid #ddd;
+    }
+
+    .project:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .project h2 {
+      font-size: 1.75rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .project p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .project-details {
+      margin-top: 15px;
+    }
+
+    .project-details h3 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+      color: #444;
+    }
+
+    .project-details ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .project-details ul li {
+      margin-bottom: 8px;
+    }
+
+    .project img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .project-overview {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .project {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Project Showcase</h1>
+  </header>
+
+  <section class="project-overview">
+    <article class="project">
+      <img src="ise-chatbot-image.jpg" alt="ISE ChatBot">
+      <h2>ISE ChatBot</h2>
+      <p>
+        ISE ChatBot is a web-based chat application that utilizes OpenAI's GPT-3.5-turbo model to generate responses.
+        It serves as a conversational interface, allowing users to interact with the chatbot and receive responses.
+      </p>
+      <div class="project-details">
+        <h3>Features:</h3>
+        <ul>
+          <li>User Interaction: Users can engage in conversations with the chatbot by entering messages in the input field.</li>
+          <li>OpenAI Integration: The chatbot leverages OpenAI's GPT-3.5-turbo model to generate responses based on user input.</li>
+          <li>Mental Health Awareness: The chatbot is designed to identify and respond appropriately to mental health-related queries.</li>
+        </ul>
+        <h3>Prerequisites:</h3>
+        <ul>
+          <li>Web browser with JavaScript enabled</li>
+          <li>API Key for OpenAI GPT-3.5-turbo (insert your API key in script.js)</li>
+        </ul>
+        <h3>Usage:</h3>
+        <ul>
+          <li>Launch the application by opening index.html.</li>
+          <li>Click on the chatbot icon to open the chat interface.</li>
+          <li>Enter messages in the chat input to engage with the chatbot.</li>
+          <li>The chatbot will provide responses based on the user's input.</li>
+        </ul>
+        <h3>Customization:</h3>
+        <ul>
+          <li>To customize the appearance, modify the styles in style.css.</li>
+          <li>Adjust the chatbot behavior by updating the logic in script.js.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="project">
+      <img src="medical-ml-project-image.jpg" alt="Medical ML Project">
+      <h2>Medical ML Project</h2>
+      <p>
+        This project uses a machine learning model to predict diseases based on user-entered symptoms. It also provides additional information such as precautions, medications, workouts, and diets for the predicted disease.
+      </p>
+      <div class="project-details">
+        <h3>Features:</h3>
+        <ul>
+          <li>Predicts diseases based on user symptoms.</li>
+          <li>Displays disease description.</li>
+          <li>Provides precautions, medications, workouts, and diets for the predicted disease.</li>
+        </ul>
+        <h3>Technologies Used:</h3>
+        <ul>
+          <li>Python, Flask, Streamlit</li>
+          <li>Pandas, Scikit-learn</li>
+          <li>HTML/CSS (for web templates)</li>
+        </ul>
+        <h3>File Structure:</h3>
+        <ul>
+          <li>dataset: CSV files with data</li>
+          <li>models: Trained model file</li>
+          <li>templates: HTML files</li>
+          <li>app.py, train_model.py, requirements.txt, README.md</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="project">
+      <img src="music-data-analysis-image.jpg" alt="Music Data Analysis">
+      <h2>Music Data Analysis</h2>
+      <p>
+        This project involves analyzing a music dataset, including data cleaning, exploratory data analysis, clustering, and regression modeling to understand patterns and predict song popularity.
+      </p>
+      <div class="project-details">
+        <h3>Highlights:</h3>
+        <ul>
+          <li>Data Cleaning: Removing duplicate entries to improve dataset accuracy.</li>
+          <li>Exploratory Data Analysis: Analyzing data distributions and feature relationships.</li>
+          <li>Clustering: Using K-means to group songs based on features.</li>
+          <li>Regression: Building a model to predict song popularity.</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+</body>
+</html>
